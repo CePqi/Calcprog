@@ -1,0 +1,203 @@
+.drop {
+      position: relative;
+      display: flex;
+      float: right;
+      border-radius: 6px;
+      width: 160px;
+      justify-content: space-between;
+
+      }
+.button, .button-1 {
+        cursor: pointer;
+        border: none;
+        background-color: white;
+        font-size: 20px;
+      }
+
+.dropdown, .dropdown-2{
+        position: absolute;
+        display: none;
+        right: 40%;
+        box-shadow: 0 4px 8px rgba(255, 223, 0, 0.6);
+        margin: 0;
+        padding: 0 0;
+        list-style-type: none;
+        width: 160px;
+        border-radius: 10px;
+        background-color: black;
+      }
+.dropdown{
+      right: 0;
+      }
+
+.dropdown li, .dropdown-2 li{
+        padding: 10px 20px;
+        color: white;
+      }
+
+.dropdown li:hover, .dropdown-2 li:hover {
+         background-color: #FFD700;
+         color: black;
+         border: 1px solid black;
+         box-shadow: 0 4px 10px black;
+         cursor: pointer;
+      }
+
+.resp-1:hover .dropdown
+        {
+         display: block;
+         }
+
+.resp-2:hover .dropdown-2
+        {
+         display: block;
+         }
+
+.resp-2{
+          position: relative;
+       }
+.dropdown-2:hover{
+        border-radius: 0;
+        }
+
+.button, .button-1 {
+     border: 3px solid black;}
+
+.button:hover, .button-1:hover {
+     border: 0;}
+
+.own-block {
+       text-shadow: 0 1px 2px #000;
+       color: #fff;
+       width: 50%;
+       height: 935px;
+       border: 4px solid black;
+       background-color: #333; /* #FFDDEE */
+       border-radius: 20px;
+       display: flex;
+       justify-content: left;
+       box-shadow: 0 0 10px #000;
+       font-family: sans-serif
+       margin-left: 56px;
+       }
+
+
+body {
+        background-color: #2E003E;
+     }
+
+
+.dropdown-2:hover .ins-ul-dah {
+         display: block;
+     }
+
+.ins-ul-dah {
+        display: none;
+        position: absolute;
+        width: 160px;
+        left: 70%;
+        margin-top: 10px;
+        list-style: none;
+        background-color: lightgrey;
+        padding: 0 0;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.6);
+
+     }
+.ins-ul-dah li:hover{
+          background-color:  black;
+          color: white;
+          box-shadow: 0 4px 8px rgba(255, 255, 255, 0.6);
+
+     }
+
+.ins-ul-dah li{
+       color: black;
+       border: 3px solid black;
+     }
+
+.first-li {
+      position: relative;
+     }
+
+#roofFForm, #roofSForm{
+        display: flex;
+        background-color: #292929;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 16px;
+        border: 3px solid black;
+        padding: 20px 10px 20px 10px;
+        box-shadow: 0 0 10px #000;
+        gap: 6px;
+        margin-left: 0px;
+     }
+
+#roofFForm {
+     }
+
+#roofSForm {
+          margin-bottom: 0px;
+          background-color: #262626;
+          padding: 10px 15px 10px 15px;
+          text-shadow: 0 1px 2px #000;
+          margin-top: 40%;
+          justify-content: center;
+          margin-right: 0px;
+          margin-bottom: 37%;
+          color: #fff;
+     }
+
+.lgd-cont{
+        text-align: left;
+     }
+
+.field-descr {
+        margin-top: 10px;
+        border: 3px solid white;
+        border-radius: 6px;
+        padding: 0;
+        margin: 10px 15px 30px 15px;
+     }
+
+.inp-t-desk {
+       background-color: transparent;
+       border: 3px solid black;
+       padding-bottom: 10px;
+       width: 340px;
+       border: none;
+       height: 100%;
+       color: #fff;
+     }
+.inp-t-desk:focus {
+        outline: none;
+     }
+
+#first-par {
+    margin: 0;
+    padding: 0;
+
+     }
+
+.ldg-cont-2 {
+             text-align: left;
+      }
+
+.field-set {
+        border-radius: 6px;
+        margin-top: 19px;
+        margin-bottom: 19px;
+        border: 3px solid white;
+     }
+
+.button-3 {
+      color: #fff;
+      width: 350px;
+      margin-left: 14px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #333;
+      font-family: sans-serif;
+      box-shadow: 0 0 8px 3px rgba(255, 255, 255, 0.4);
+     }

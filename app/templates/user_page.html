@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="/static/style/user_page.css">
+</head>
+
+<body>
+<div class="drop">
+    <div class="resp-3">
+        <button class="button-3">Профиль</button>
+    </div>
+    <div class="resp-2">
+        <button class="button-1">Расчеты</button>
+        <ul class="dropdown-2">
+           <li class="first-li">
+               Крыша
+               <ul class="ins-ul-dah">
+                     <li onclick="roofForm(event)">Нагрузка на крышу</li>
+               </ul>
+           </li>
+        </ul>
+    </div>
+    <div class="resp-1">
+        <button class="button">⚙️</button>
+        <ul class="dropdown">
+             <li onclick="logOut(event)">Выход</li>
+        </ul>
+    </div>
+</div>
+<div class="own-block">
+    <form id="roofFForm">
+    </form>
+    <form id="roofSForm">
+    </form>
+</div>
+</body>
+<script src="/static/js/javascript.js"></script>
+</html>

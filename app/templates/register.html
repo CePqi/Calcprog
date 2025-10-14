@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"
+  <title>Вход</title>
+  <link rel="stylesheet" href="/static/style/register.css">
+
+</head>
+<body>
+
+<form id="register_form">
+
+  <h1 class="header">Регистрация
+    <span>
+      <sup>
+        <a href="http://127.0.0.1:8000/auth/login/view" class="entr-e">
+              Вход
+        </a>
+      </sup>
+    </span>
+  </h1>
+  <fieldset class="field-set-1">
+    <legend class="leg-set-1">
+        Email*
+    </legend>
+    <input name="email" type="email" class="inpt-1">
+  </fieldset>
+  <fieldset class="field-set-2">
+    <legend class="leg-set-2">
+      Password*
+    </legend>
+    <input name="password" type="password" class="inpt-2">
+  </fieldset>
+
+
+  <button type="submit" onclick="registerFunc(event)" class="but-cont">Зарегистрироваться</button>
+</form>
+
+
+</body>
+<script src="/static/js/javascript.js"></script>
+</html>

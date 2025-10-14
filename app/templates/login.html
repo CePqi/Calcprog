@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход</title>
+  <link rel="stylesheet" href="/static/style/login.css">
+
+</head>
+<body>
+
+<form id="login_form">
+  <h1 class="header">Вход</h1>
+  <fieldset class="field-set-1">
+    <legend class="leg-set-1">
+        Email*
+    </legend>
+    <input name="email" type="email" class="inpt-1">
+  </fieldset>
+  <fieldset class="field-set-2">
+    <legend class="leg-set-2">
+      Password*
+    </legend>
+    <input name="password" type="password" class="inpt-2">
+  </fieldset>
+
+  <button type="submit" onclick="loginHandler(event)" class="but-cont">Войти</button>
+</form>
+
+<script src="/static/js/javascript.js"></script>
+</body>
+</html>

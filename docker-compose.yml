@@ -1,0 +1,50 @@
+services:
+  web:
+    container_name: first_proj
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - web-network
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: calckpa_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - db
+    networks:
+      - web-network
+
+  db:
+    image: postgres:15
+    container_name: calkpa_db
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 10s
+      retries: 3
+      start_period: 30s
+      timeout: 10s
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+      POSTGRES_DB: calcu
+    volumes:
+      - data_pg:/var/lib/postgresql/data
+    networks:
+      - web-network
+
+networks:
+  web-network: {}
+
+volumes:
+  data_pg:
