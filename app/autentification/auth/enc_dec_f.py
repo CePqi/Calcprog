@@ -1,5 +1,5 @@
-import jwt
 from app.config import settings
+import jwt
 
 
 def encoded_func(data, key: bytes = settings.PRIVATE_KEY, algorithm: str = settings.ALGORITHM):

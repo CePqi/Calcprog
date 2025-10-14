@@ -1,6 +1,8 @@
 services:
   web:
     container_name: first_proj
+    environment:
+      DB_URL: ${DB_URL}
     build: .
     ports:
       - "8000:8000"
