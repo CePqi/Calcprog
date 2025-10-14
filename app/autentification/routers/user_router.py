@@ -1,4 +1,3 @@
-
 from fastapi import APIRouter, Depends, Request, Response
 from fastapi.templating import Jinja2Templates
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -8,7 +7,7 @@ from app.schemas import RegistertUser, LoginUser, SearchUserById, SearchUserByEm
 from app.autentification.auth.hash_p import hash_password, check_password
 
 
-template = Jinja2Templates(directory="app/templates")
+template = Jinja2Templates(directory="templates")
 
 router = APIRouter(prefix="/auth", tags=["user"])
 

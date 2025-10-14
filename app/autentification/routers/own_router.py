@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Request
 from fastapi.templating import Jinja2Templates
 
-template = Jinja2Templates(directory="app/templates")
+template = Jinja2Templates(directory="templates")
 
 
 router = APIRouter(prefix="/own", tags=["root_page"])

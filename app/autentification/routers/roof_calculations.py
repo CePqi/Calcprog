@@ -5,7 +5,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.models import db_helper
 from app.schemas import FormRoofFirst
 
-template = Jinja2Templates(directory="app/templates")
+template = Jinja2Templates(directory="templates")
 
 
 router = APIRouter(prefix="/calcul", tags=["roof"])
