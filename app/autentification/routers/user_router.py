@@ -41,7 +41,7 @@ async def login_page(request: Request):
 
 
 @router.post("/login")
-async def login_user(response: Response, request: Request, user_form: LoginUser, session: AsyncSession = Depends(db_helper.get_async_session)):
+async def login_user(response: Response, user_form: LoginUser, session: AsyncSession = Depends(db_helper.get_async_session)):
 
 
     user_dict = user_form.model_dump()
@@ -58,7 +58,7 @@ async def login_user(response: Response, request: Request, user_form: LoginUser,
 
 
 @router.post("/logout")
-async def logout_user(response: Response, request: Request):
+async def logout_user(response: Response):
     response.delete_cookie(key="user_cookie_pswrd")
     return {"message": "Куки удалены"}
 
